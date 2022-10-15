@@ -1,0 +1,24 @@
+{
+  "name": "nodeportfolio",
+  "version": "1.0.0",
+  "description": "Meu portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Darthpool9900/MyDefinitivePortfolio.git"
+  },
+  "author": "Rafael Zacjesky de Oliveira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Darthpool9900/MyDefinitivePortfolio/issues"
+  },
+  "homepage": "https://github.com/Darthpool9900/MyDefinitivePortfolio#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
+    "nodemailer": "^6.8.0"
+  }
+}
