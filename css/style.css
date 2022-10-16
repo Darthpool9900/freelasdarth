@@ -214,7 +214,7 @@ body{
     margin: 0 auto;
     position: relative;
     top:-60px;
-    background-image: url('/resources/perfil.png');
+    background-image: url('../resources/perfil.png');
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
