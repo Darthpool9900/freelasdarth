@@ -1,8 +1,7 @@
 var prev = document.querySelector('.prev');
 var after = document.querySelector('.after');
 var slide = document.querySelector('.flex_display');
-var name = document.querySelector('.name');
-var text = document.querySelector('.text');
+var  submit = document.querySelector('.email');
 var x = 0;
 
 prev.addEventListener('click',(e)=>{
@@ -24,6 +23,22 @@ after.addEventListener('click',(e)=>{//Adiciona 80 a coordenada x
         slide.scroll(x,0);//Desloca a scrollbar no eixo X
 })
 
+submit.addEventListener('click',()=>{
+fetch("https://formsubmit.co/ajax/your@email.com", {
+    method: "POST",
+    headers: { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+    },
+    body: JSON.stringify({
+        name: "",
+        message: ""
+    })
+})
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.log(error));
+});
 
 
 
