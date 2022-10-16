@@ -603,6 +603,12 @@ body{
 
 }
 
+@media screen and (max-width:395px){
+    .mobile ul li a{
+        font-size:48px;
+    }
+}
+
 @media screen and (max-width:320px){
     
     .prev,.after{
