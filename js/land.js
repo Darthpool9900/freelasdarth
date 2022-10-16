@@ -22,8 +22,8 @@ prev.addEventListener('click',(e)=>{
 after.addEventListener('click',(e)=>{//Adiciona 80 a coordenada x
         x = x +400;
         
-        if(x>(400*3)){//Verifica o tamanho máxmio de x
-            x = (400*3);
+        if(x>(400*3.2)){//Verifica o tamanho máxmio de x
+            x = (400*3.2);
         }
         slide.scroll(x,0);//Desloca a scrollbar no eixo X
 })
