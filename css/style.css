@@ -20,7 +20,6 @@ header{
 body{
     background-color:rgb(13, 15, 15);
     user-select: none;
-    scroll-behavior: smooth;
 }
 
 .desktop{
