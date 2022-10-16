@@ -11,29 +11,41 @@
     </head>
     <body>
         <header>
-            <h1>Front End developer</h1>
+            <h1>Front end</h1>
+            <div class="mobile_menu">
+                <div class="barra"></div>
+                <div class="barra" style="width:60%;margin:5px auto"></div>
+                <div class="barra"></div>
+            </div>
+            <div class="mobile">
+                <div class="close" style="color:rgb(230,230,230);animation:none;top:0;">X</div>
+                <ul>
+                    <li><a href="#about">Meu perfil</a></li>
+                    <li><a href="#about">Meu trabalho</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </div>
         </header>
         <section class="banner">
             <div class="banner_container">
-            <h2>Hi, I'm a front-end developer</h2>
-            <p>My name is Rafael, I'm a student of computer enginering and i came hear to show my front-end habilities</p>
-            <input type="button" value="More about me">
+            <h2>Olá, eu sou um desenvolvedor front-end</h2>
+            <p>Meu nome é Rafael, venho através deste site mostrar minhas habilidades no front end</p>
+            <a href="#about"><input type="button" value="Mais sobre mim"></a>
         </div>
         </section>
-        <section class="About_me">
-            <h1>About me:</h1>
-            <div class="flex-container">
-                
-            <div class="perfil">
-                <h2>My profile</h2>
+        <section class="About_me" id= "about">
+            <h1>Sobre mim:</h1>
+            <div class="flex-container" >
+            <div class="perfil" >
+                <h2>Meu perfil</h2>
                 <div class="perfil_wraper">
                     <div class="background"></div>
-                    <p>My name is Rafael, I have 19 years and study computer enginering in UEPG and made this website for demonstrate my front end skills and make my</p>
+                    <p>Meu nome é Rafael, tenho 19 anos e estudo engenharia da computação na UEPG e fiz este site para demonstrar minhas habilidades de front-end e fazer meu futuro na area de desenvolvimento</p>
                 </div>
             </div>
             <div class="bar"></div>
             <div class="work">
-                <h2>My Work</h2>
+                <h2>Meu trabalho</h2>
                 <div class="flex_display">
                     <div class="card">
                         <div class="load"></div>
@@ -65,15 +77,15 @@
             </div>
         </div>
         </section>
-        <section class="form">
+        <section class="form" id = "contact">
             <form  method="POST" action="https://formsubmit.co/freelasdarth@gmail.com">
-            <h2>Make contact</h2>
+            <h2>Contate-me:</h2>
             <div class="form-wrapper">
             <input type="email" placeholder="E-mail:" class="name" name="email" required>
             <textarea placeholder="Menssage:" class="text" name="message"></textarea>
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_next" value="http://127.0.0.1:5500//thanks.html">
-            <input type = "submit" value = "Send" class="email">
+            <input type = "submit" value = "Enviar" class="email">
         </div>
     </form>
         </section>
