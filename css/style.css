@@ -48,6 +48,7 @@ body{
     top:0;
     right:1%;
     display:block;
+    cursor: pointer;
 }
 
 .barra{
