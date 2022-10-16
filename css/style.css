@@ -59,7 +59,9 @@ body{
     background-color:rgb(230, 230, 230);
     margin-top:5px;
     border-radius:1rem;
+    filter: drop-shadow(0 5px 5px rgb(13, 15, 15));
 }
+
 
 .mobile{
     position:fixed;
