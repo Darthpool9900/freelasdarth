@@ -10,7 +10,7 @@ var list_request = document.querySelectorAll('.mobile ul li a');
 var x = 0;
 
 prev.addEventListener('click',(e)=>{
-        x = x - 400;//Remove 4000 da coordenada x
+        x = x - slide.offsetWidth;//Remove 4000 da coordenada x
         
         if(x<0){//Verifica tamanho minimo de x
             x = 0;
@@ -20,12 +20,12 @@ prev.addEventListener('click',(e)=>{
 
 
 after.addEventListener('click',(e)=>{
-        x = x +400;//Adiciona 4000 a coordenada x
+        x = x +slide.offsetWidth;//Adiciona 4000 a coordenada x
         
         if(x>(400*3)&&window.innerWidth>440){//Verifica o tamanho máxmio de x
             x = (400*3);
         }else if(x>(400*3)&&window.innerWidth<=440){
-            x = (400*4);
+            x = slide.offsetWidth;
         }
         slide.scroll(x,0);//Desloca a scrollbar no eixo X
 })
