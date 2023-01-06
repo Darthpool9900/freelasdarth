@@ -8,10 +8,52 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="icon" href="resources/icon.ico">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     </head>
     <body>
+        <section class="loading">
+            <div class="wrapper">
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+            </div>
+        </section>
+        <section class="banner">
+            <div class="fundo">
+                <video src="/resources/Fundo.mp4" style="width:100%;height: 100%;" autoplay="autoplay"  loop playsinline style="pointer-events:none;"></video>
+            </div>
+            <div class="mobile">
+                <div class="close">
+                    <p>>></p>
+                </div>
+                <ul class="menu_mobile">
+                    <li><a href="about.html">About me</a></li>
+                    <li><a href="">My work</a></li>
+                    <li><a href="">My studies</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Tributes</a></li>
+                </ul>
+            </div>
+            <div class="container_wrapper">
+            <div class="banner_container">
+                <h1>Hi,I'am a frontend</br>developer</h1>
+                <span>Pelase sit down and see my work</span>
+                <input type ="button" value="Start" class="btn_hidden">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="about.html">About me</a></li>
+                    <li><a href="work.html">My work</a></li>
+                    <li><a href="study.html">My studies</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="tributes.html">Tributes</a></li>
+                </ul>
+            </div>
+        </div>
+        </section>
+        <script src="js/jquery-3.6.3.js"></script>
         <script src="js/land.js"></script>
     </body>
 </html>
