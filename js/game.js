@@ -56,6 +56,3 @@ setInterval(()=>{
 
 
 })
-
-//how to make colission in javascript
-//https://www.youtube.com/watch?v=dQw4w9WgXcQ
