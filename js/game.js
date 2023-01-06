@@ -2,7 +2,6 @@ var load = document.querySelector('.loading');
 
 window.addEventListener('load',()=>{
     load.style.display = 'none';
-    var shoot = document.querySelector('.shoot');
     var mob = document.querySelector('.newMob');
     var point = 0;
     var timer = 10000;
@@ -14,7 +13,7 @@ setInterval(()=>{
      var gameCanvas = document.querySelector('.game');
      var gameover = new Audio('resources/gameover.wav');
      
-
+     gameCanvas.appendChild(bomber).style.backgroundImage = "url('resources/spachechip.png'";
      gameCanvas.appendChild(bomber).addEventListener('click',()=>{
           document.querySelector('.gameover').style.display = 'flex';
           gameover.play()
@@ -38,6 +37,8 @@ setInterval(()=>{
      var gameCanvas = document.querySelector('.game');
      var coinCont = new Audio('resources/explode.wav');
 
+     gameCanvas.appendChild(mob).style.backgroundImage = "url('resources/mob.png')";
+
      gameCanvas.appendChild(mob).addEventListener('click',()=>{
           console.log('mob clicked');
           point++;
@@ -46,6 +47,8 @@ setInterval(()=>{
           coinCont.play();
           document.querySelector('.gametitle h1').innerText = "Pontuação: " + point;
      });
+
+     document.querySelector('.newMob').style.backgroundImage = "url('resources/spaceship.png')"
 
      mob.style.left = Math.floor(Math.random()*90)+'%';
 
