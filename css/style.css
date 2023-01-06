@@ -259,7 +259,7 @@ body{
     position: absolute;
     top:0%;
     transform:translate(-4%,-50%) rotate(90deg);
-    background-image: url('resources/Spachechip.png');
+    background-image: url('/resources/Spachechip.png');
     background-size: contain;
     transition: 0.1s;
     margin:0;
@@ -283,7 +283,7 @@ body{
     position: absolute;
     bottom:0%;
     transform:translate(-4%,-50%) rotate(270deg);
-    background-image: url('resources/Mob.png');
+    background-image: url('/resources/Mob.png');
     background-size: contain;
     animation: mob 10s;
     margin:0;
