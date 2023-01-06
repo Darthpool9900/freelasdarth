@@ -1,14 +1,8 @@
-var prev = document.querySelector('.prev');
-var after = document.querySelector('.after');
-var slide = document.querySelector('.flex_display');
-var  submit = document.querySelector('.email');
-var modal = document.querySelector('.thanks');
-var mobile_select = document.querySelector('.mobile_menu');
-var mobile_menu = document.querySelector('.mobile');
-var close = document.querySelector('.close');
-var list_request = document.querySelectorAll('.mobile ul li a');
-var x = 0;
+$(document).ready(function () {
+   $('.loading').css('display', 'none');
+   
 
+<<<<<<< HEAD
 prev.addEventListener('click',(e)=>{
         x = x - slide.offsetWidth;//Remove 4000 da coordenada x
         
@@ -63,4 +57,19 @@ for(var i=0;i<list_request.length;i++){//Inicio fluxo de repetição para seleci
     }
     })
 }
+=======
+   $('.btn_hidden').click(function () {
+      $('.mobile').css('display', 'block');
+      $('.mobile').css('width','100%');
+      setTimeout(()=>{
+         $('.menu_mobile li a').css('opacity','1');
+      },500)
+   })
+>>>>>>> alpha
 
+   $('.close').click(function () {
+      $('.menu_mobile li a').css('opacity','0');
+      $('.mobile').css('width','0%');
+      $('.mobile').css('display', 'none');
+   })
+});

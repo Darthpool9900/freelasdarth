@@ -8,89 +8,52 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="icon" href="resources/icon.ico">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <h1>Front end</h1>
-            <div class="mobile_menu">
-                <div class="barra"></div>
-                <div class="barra" style="width:60%;margin:5px auto"></div>
-                <div class="barra"></div>
+        <section class="loading">
+            <div class="wrapper">
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+            </div>
+        </section>
+        <section class="banner">
+            <div class="fundo">
+                <video src="/resources/Fundo.mp4" style="width:100%;height: 100%;" autoplay="autoplay"  loop playsinline style="pointer-events:none;"></video>
             </div>
             <div class="mobile">
-                <div class="close" style="color:rgb(230,230,230);animation:none;top:0;">X</div>
-                <ul>
-                    <li><a href="#about">Meu perfil</a></li>
-                    <li><a href="#work">Meu trabalho</a></li>
-                    <li><a href="#contact">Contato</a></li>
+                <div class="close">
+                    <p>>></p>
+                </div>
+                <ul class="menu_mobile">
+                    <li><a href="about.html">About me</a></li>
+                    <li><a href="">My work</a></li>
+                    <li><a href="">My studies</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Tributes</a></li>
                 </ul>
             </div>
-        </header>
-        <section class="banner">
+            <div class="container_wrapper">
             <div class="banner_container">
-            <h2>Olá, eu sou um desenvolvedor front-end</h2>
-            <p>Meu nome é Rafael, venho através deste site mostrar minhas habilidades no front end</p>
-            <a href="#about"><input type="button" value="Mais sobre mim"></a>
-        </div>
-        </section>
-        <section class="About_me" id= "about">
-            <h1>Sobre mim:</h1>
-            <div class="flex-container" >
-            <div class="perfil" >
-                <h2>Meu perfil</h2>
-                <div class="perfil_wraper">
-                    <div class="background"></div>
-                    <p>Meu nome é Rafael, tenho 19 anos e estudo engenharia da computação na UEPG e fiz este site para demonstrar minhas habilidades de front-end e fazer meu futuro na area de desenvolvimento</p>
-                </div>
+                <h1>Hi,I'am a frontend</br>developer</h1>
+                <span>Pelase sit down and see my work</span>
+                <input type ="button" value="Start" class="btn_hidden">
             </div>
-            <div class="bar"></div>
-            <div class="work" id="work">
-                <h2>Meu trabalho</h2>
-                <div class="flex_display">
-                    <div class="card">
-                        <div class="load"></div>
-                    </div>
-                    <div class="card">
-                        <div class="load"></div>
-                    </div>
-                    <div class="card">
-                        <div class="load"></div>
-                    </div>
-                    <div class="card">
-                        <div class="load"></div>
-                    </div>
-                    <div class="card">
-                        <div class="load"></div>
-                    </div>
-                    <div class="card">
-                        <div class="load"></div>
-                    </div>
-                </div>
-                <div class="flex-container_buttons">
-                <div class="prev">
-                    <p>←</p>
-                </div>
-                <div class="after">
-                    <p>→</p>
-                </div>
-            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="about.html">About me</a></li>
+                    <li><a href="work.html">My work</a></li>
+                    <li><a href="study.html">My studies</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="tributes.html">Tributes</a></li>
+                </ul>
             </div>
         </div>
         </section>
-        <section class="form" id = "contact">
-            <form  method="POST" action="https://formsubmit.co/13d216ba2a65cab79d4d2a2d5a6d9034">
-            <h2>Contate-me:</h2>
-            <div class="form-wrapper">
-            <input type="email" placeholder="E-mail:" class="name" name="email" required>
-            <input type="hidden" name="_next" value="https://darthpool9900.github.io/mysweetwork/">
-            <input type="hidden" name="_subject" value="My sweet work front end!">
-            <textarea placeholder="Mensagem:" class="text" name="message"></textarea>
-            <input type = "submit" value = "Enviar" class="email">
-        </div>
-    </form>
-        </section>
+        <script src="js/jquery-3.6.3.js"></script>
         <script src="js/land.js"></script>
     </body>
 </html>
