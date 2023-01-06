@@ -2,6 +2,7 @@ $(document).ready(function () {
    $('.loading').css('display', 'none');
    $('.btn_hidden').click(function () {
       $('.mobile').css('display', 'block');
+      $('.mobile').css('height','100%')
       $('.mobile').css('width','100%');
       setTimeout(()=>{
          $('.menu_mobile li a').css('opacity','1');
@@ -9,6 +10,7 @@ $(document).ready(function () {
    })
    $('.close').click(function () {
       $('.menu_mobile li a').css('opacity','0');
+      $('.mobile').css('height','0%')
       $('.mobile').css('width','0%');
       $('.mobile').css('display', 'none');
    })
