@@ -130,11 +130,10 @@ body{
 
 .mobile{
     width: 0;
-    height: 0%;
+    height: 0;
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #0f0f0f;
     z-index: 999;
     display: none;
     transition: 0.5s;
