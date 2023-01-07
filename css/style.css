@@ -411,7 +411,7 @@ body{
     border-radius: 4rem;
     font-size: 30px;
     transition: 0.5s;
-    
+    cursor: pointer;
 }
 
 .open{
@@ -430,6 +430,7 @@ body{
     font-size: 30px;
     transition: 0.5s;
     filter: drop-shadow(0 4px 4px rgb(12, 12, 12));
+    cursor: pointer;
 }
 
 
