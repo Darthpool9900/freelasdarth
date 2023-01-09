@@ -132,6 +132,7 @@ body{
     width: 0;
     height: 0;
     position: fixed;
+    background-color: #0f0f0f;
     top: 0;
     left: 0;
     z-index: 999;
